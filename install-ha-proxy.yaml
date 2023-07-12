@@ -12,8 +12,8 @@
     }}"
   tasks:
   - name: Update apt packages
-  apt:
-    update_cache: yes
+    apt:
+      update_cache: yes
   - name: Install HA proxy only on Loadbalancer servers
     include_role:
       name: geerlingguy.haproxy
